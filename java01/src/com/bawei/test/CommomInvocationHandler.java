@@ -22,6 +22,10 @@ public class CommomInvocationHandler implements InvocationHandler{
 		this.proxyTarget = proxyTarget;
 	}
 	
+	
+	
+	
+	
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		return method.invoke(this.proxyTarget, args);
